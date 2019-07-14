@@ -1,0 +1,12 @@
+#map-container{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+#map{
+    border-style: solid;
+    border-width: medium;
+    border-radius: 3px;
+    margin: 0;
+    height: 550px;
+}
