@@ -1,14 +1,26 @@
 {
   "name": "ma-uzk-leaflet",
   "version": "1.0.0",
-  "description": "",
+  "description": "interactive map application for providing information on accessability on University of Cologne Campus,
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "beefy app.js:bundle.js --live",
     "bundle": "browserify app.js -o bundle.js"
   },
-  "author": "",
+  "author": "MappingAccessAtUzK-Project",
+  "contributors": [
+    {
+      "name": "Leonie Twente",
+      "email": "ltwente@smail.uni-koeln.de",
+      "url": ""
+    },
+    {
+      "name": "Justus Lambrecht",
+      "email": "jlambre1@smail.uni-koeln.de",
+      "url": ""
+    }
+  ],
   "license": "ISC",
   "dependencies": {
     "leaflet": "^1.5.1"
