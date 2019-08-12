@@ -4,9 +4,18 @@ var L = require('leaflet');
 
 // Initialize the map
 var map = L.map('map', {
-  scrollWheelZoom: false,
+  scrollWheelZoom: true,
   zoomControl: false
 });
+
+//zoom control options
+var zoomOptions = {
+	zoomInText: '+',
+	zoomOutText: '-',
+	position: 'bottomright',
+};
+var zoom = L.control.zoom(zoomOptions); //Creating Zoom Control
+zoom.addTo(map); //Adding Zoom Control to map
 
 // Set the position and zoom level of the map
 map.setView([50.927, 6.931], 16);
@@ -16,12 +25,3 @@ var osm_mapnik = L.tileLayer('https://api.mapbox.com/styles/v1/jlambre1/cjtzjn4x
 	maxZoom: 19,
 	attribution: '&copy; OSM Mapnik <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
 }).addTo(map);
-
-//zoom control options
-var zoomOptions = {
-	zoomInText: '+',
-	zoomOutText: '-',
-	position: 'topright',
-};
-var zoom = L.control.zoom(zoomOptions); //Creating Zoom Control
-zoom.addTo(map); //Adding Zoom Control to map

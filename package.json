@@ -23,7 +23,8 @@
   ],
   "license": "ISC",
   "dependencies": {
-    "leaflet": "^1.5.1"
+    "leaflet": "^1.5.1",
+    "polyline-encoded": "0.0.8"
   },
   "devDependencies": {
     "beefy": "^2.1.8",
