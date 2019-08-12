@@ -1,7 +1,7 @@
 {
   "name": "ma-uzk-leaflet",
   "version": "1.0.0",
-  "description": "interactive map application for providing information on accessability on University of Cologne Campus,
+  "description": "interactive map application for providing information on accessability on University of Cologne Campus",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
