@@ -1,0 +1,216 @@
+id	aliaskuerzel	aliasname	institutskuerzel
+1	2	allgbwlrisiko	Allgemeine Betriebswirtschaftslehre, Risikomanagement und Versicherungslehre	versicherlehre
+2	4	anwaltnotarrecht	Anwalts- und Notarrecht, Dokumentationszentrum	europaanwrecht
+3	5	bankbetr	Bankbetriebslehre	allgbwlbank
+4	6	stavv	StAVV - Studierendenausschuss der Vollversammlung (der Humanwiss. Fak.)	fachschaftew
+5	9	betwsteuer	Betriebswirtschaftliche Steuerlehre	allgbwlbetrsteuer
+6	10	bib	Bibliothek der Universität	unibib
+7	11	bilanzstrecht	Bilanz- und Steuerrecht	buergrbilanz
+8	12	buergrdhandel	Bürgerliches Recht, Deutsches und Internationales Handels-, Wirtschafts- und Bankrecht, Internationales Privatrecht	bankrecht
+9	15	controllingmed	Controlling (Med. Fak.)	zentralbereichms
+10	16	controllingwiso	Controlling (WiSo Fak.)	allgbwlcontrolling
+11	20	epidemiologie	Epidemiologie	medizinstatistik
+12	21	ethik	Ethik (Geschichte und Ethik der Medizin)	geschethik
+13	23	fakultaetsrat	Fakultätsrat der Math-Nat. Fakultät	fachschaftmathnat
+14	24	fgs	FGS - Förderung des Gasthörer- und Seniorenstudiums	vereinfoerder
+15	25	finanzlehre	Finanzierungslehre	allgbwlfinanz
+16	27	forschtransfer	Forschungstransfer	drittmittel
+17	28	fortune	Fortune (Forschungspool der Med. Fakultät)	koelnfortune
+18	29	gasthoerer	Gasthörer (Koordinierungsstelle)	koordstgasthoerer
+19	31	geochemie	Geochemie	mineralogie
+20	32	gesundmanage	Gesundheitswesen (Management)	allgbwlgesundheit
+21	34	grosserklausuren	Großer Examens- und Klausurenkurs	klausurenkurs
+22	35	gynaekologie	Gynäkologie	frauenheilkunde
+23	36	handeldistribution	Handel und Kundenmanagement	allgbwlhandel
+24	37	handelgesrecht	Handels- und Gesellschaftsrecht, Arbeitsrecht und Europäische Privatrechtsentwicklung	buergrhandel
+25	38	handelrechtschutz	Handels- und Gesellschaftsrecht und Gewerblicher Rechtsschutz	buergrrechtschutz
+26	39	hautklinik	Hautklinik	dermatologie
+27	40	heilppsycho1	Heilpädagogische Psychologie (Prof. Fengler)	psychohpf1
+28	41	hochsportuni	Hochschulsport (Uni)	campussport
+29	43	informationkommtech	Informations- und Kommunikationstechnologie (Med. Fak.)	ukit
+30	45	judaistik	Judaistik	martinbuber
+31	46	kinderheil	Kinderheilkunde (Kinderklinik)	allgkinder
+32	47	kinderjpsych	Kinder- und Jugendpsychiatrie	psychiatriekind
+33	48	klinrz	uk-it Köln Bonn	ukit
+34	49	koelnalumni	Köln Alumni (Absolventennetzwerk der Uni Köln)	alumni
+35	53	labmolneuro	Laboratorium für Molekulare Neuroforschung	molekulneuro
+36	54	lehrkrnkhs	Lehrkrankenhäuser	akadlehrkrkhs
+37	55	lehrlatein	Lehr- und Forschungszentrum Lateinamerika (LFZL)	zentrumlateinamerika
+38	56	lehrphysio	Lehranstalt für Physiotherapie	physiotherapie
+39	58	medienmanage	Medienmanagement	allgbwlmedien
+40	60	medizincontrolling	Medizinisches Controlling	zentralbereichms
+41	61	medizinzentralbib	Medizinische Zentralbibliothek	deutschzentralbib
+42	62	medsynergien	Medizinische Synergien	zentralbereichms
+43	64	naturheil	Naturheilverfahren	wisseval
+44	70	paedwiso	Pädagogik (WiSo Fak.)	wisopaed
+45	71	personalwirt	Personalwirtschaftslehre	allgbwlpersonal
+46	73	pmv	PMV Forschungsgruppe	forschprimaermed
+47	74	pneumologie	Pneumologie	inneremed3
+48	76	privatrecht	Privatrecht, internationales und ausländisches	internationarecht
+49	77	privatrechtsgesch	Privatrechtsgeschichte, neuere	neueprivatrecht
+50	78	produktionswirt	Produktionswirtschaft	allgbwlproduktion
+51	81	psychiatriehpf	Psychiatrie, heilpädagogisch	heilppsychiatrie
+52	82	psychowiso	Psychologie (WiSo Fak.)	wisopsych
+53	84	risiko	Risikomanagement und Versicherungslehre	versicherlehre
+54	87	schulpaedagogik	Schulpädagogik	allgdidaktik
+55	88	senioren	Seniorenstudium (Koordinierungsstelle)	koordstgasthoerer
+56	90	sozialmedizin	Sozialmedizin	arbmed
+57	91	sozialwg	Sozial- und Wirtschaftsgeschichte	wisogesch
+58	92	soziologiemed	Soziologie, medizinische	medsoziologie
+59	93	sportasta	Sportprogramm (Asta)	hochsport
+60	94	sportuni	Sportprogramm (Uni)	campussport
+61	95	sprechrat	SprecherInnenrat der Philosphischen Fakultät	fachschaftphil
+62	96	staatllehrorthoptik	Staatl. Lehranstalt für Orthoptistinnen	orthoptik
+63	97	staatlbauamt	Staatliches Bauamt Köln I	bauamt
+64	98	steuerlehre	Steuerlehre (Allg. BWL)	allgbwlbetrsteuer
+65	100	studentenwerk	Studierendenwerk	koelnstw
+66	101	supplychain	Supply Chain Management und Management Science	allgbwlscm
+67	103	theologieev	Theologie, Evangelische	evangtheol
+68	106	treuhand	Treuhandseminar (Wirtschaftsprüfung)	allgbwlwipruefung
+69	107	uhrmacher	Uhrmacher-Institut für klinische HNO-Forschung	jeanuhrmacher
+70	108	unisport	Universitätssport	campussport
+71	109	verbindungen	Verbindungen	studentverbindg
+72	110	wipruef	Wirtschaftsprüfung	allgbwlwipruefung
+73	112	wissenschaftsrecht	Wissenschaftsrecht	deutscheuroparecht
+74	113	zentralbib	Zentralbibliothek für Medizin	deutschzentralbib
+75	114	zentrallabor	Zentrallabor	klinchem
+76	116	zentrumzahn	Zentrum für Zahn , Mund  und Kieferheilkunde	zahnmundkiefer
+77	117	zivilprozessrecht	Zivilprozessrecht und Rechtsphilosophie	medizinrecht
+78	120	gewerblrechtsschutz	Gewerblicher Rechtsschutz	buergrrechtschutz
+79	121	corporatefin	Corporate Finance	allgbwlcf
+80	122	uebersetzung	Übersetzungs- und Dolmetscherdienst	akuedo
+81	124	hauptseminar	Hauptseminar (rechtswissenschaftliches)	rechtwiss
+82	125	koelncampus	KölnCampus (Kölner Hochschulradio)	hochradio
+83	126	campuswelle	Campuswelle Köln (Kölner Hochschulradio)	hochradio
+84	127	europarecht	Europarecht (Recht der Europäischen Union)	rechteuropa
+85	128	supplychainprod	Supply Chain Management und Produktion	allgbwlproduktion
+86	129	empwisozentrum	Empirische Wirtschafts- und Sozialforschung (Zentrum)	zentrumempwiso
+87	130	untfuehrung	Unternehmensführung und Logistik	allgbwlbetrplanung
+88	132	blutspende	Blutspendezentrale	transfusion
+89	133	sozialpsycho	Sozialpsychologie (WiSo-Fak.)	wisopsych
+90	137	notfallmedizin	Notfallmedizin	zentralintensivnotfall
+91	139	allgemeinmedizin	Allgemeinmedizin (Schwerpunkt)	schwerpunktam
+92	140	lateinamerika	Lateinamerika (Lehr- und Forschungszentrum)	zentrumlateinamerika
+93	141	publizistik	Publizistik (Geschichte)	geschpublizistik
+94	142	islamwissenschaft	Islamwissenschaft (Orientalische Philologie)	arabistik
+95	143	indophilo	Indonesische Philologie	malaiologie
+96	144	dokuzentrumeuranwrecht	Dokumentationszentrum Europäisches Anwalts- und Notarrecht	europaanwrecht
+97	145	forschungafrika	Forschungstelle Afrika	afrikaforschung
+98	146	archafrika	Archäologie und Geschichte Afrikas	heinrbarth
+99	149	seismo	Seismologische Station	erdbeben
+100	151	fsk	FSK - Fachschafts-Konferenz	unifsk
+101	152	kardiologie	Kardiologie	inneremed3
+102	153	palaeontologie	Paläontologie	geologie
+103	154	kosmochemie	Kosmochemie	mineralogie
+104	155	hepatologie	Hepatologie und Gastroenterologie	gastroenter
+105	156	wirtschaftsforschung	Wirtschaftsforschung, Labor	koelnlabwifo
+106	158	rechtswissfak	Rechtswissenschaftliche Fakultät	jurfak
+107	159	wirecht	Wirtschaftsrecht	buergrwirtschaft
+108	160	internationwrecht	Internationales Wirtschaftsrecht	voelkerrechteuropa
+109	161	vereinfoerderrechtswiss	Verein zur Förderung der Rechtswissenschaft	foerdervereinrechtswiss
+110	162	prothetikzahn	Prothetik, zahnärztliche	zahnproth
+111	163	berufswisopaed	Berufs-, Wirtschafts- und Sozialpädagogik	wisopaed
+112	164	deutschdidaktik	Deutsche Sprache und ihre Didaktik	deutschsprachlit2
+113	165	englischdidaktik	Englische Sprache und ihre Didaktik	englischsem2
+114	166	geschphil	Geschichte und Philosophie	histsem2
+115	167	sozialwissewf	Sozialwissenschaften (Humanwiss. Fak.)	vergleichendebildung
+116	169	audiomz	Audiovisuelles Medienzentrum (AVMZ)	filmproduktion
+117	170	antikekulturen	Antike Kulturen des Mittelmeerraumes (Lehr- und Forschungszentrum)	zentrumantikekulturen
+118	171	intertranskult	Inter- und Transkulturelle Studien (Zentrum)	zentruminterkult
+119	172	medienwisskoeln	Medienwissenschaften Köln (Zentrum)	zentrummedienwiss
+120	173	mittelalterstudien	Mittelalterstudien (Zentrum)	zentrummittelalter
+121	174	moderne	Moderneforschung (Zentrum)	zentrummoderne
+122	175	osteuropa	Osteuropa (Zentrum)	zentrumosteuropa
+123	177	vergleicheus	Vergleichende Europäische Studien (Zentrum)	zentrumvergleicheus
+124	178	strafrechtausl	Strafrecht, ausländisches und internationales	auslrecht
+125	179	verwaltungslehre	Verwaltungslehre, öffentliches Recht	oeffrechtverw
+126	180	voelkereuroparecht	Völker- und Europarecht, Öffentliches Recht	oeffrechtvoelker
+127	181	risikomanagement	Risikomanagement, Graduiertenkolleg	gradkolleg811
+128	182	unternehmensentwicklung	Unternehmensentwicklung und Organisation	allgbwlorga
+129	183	geschwisodv	Geschäftsstelle für Datenverarbeitungssysteme der WiSo Fakultät	wisoit
+130	184	erziehungskultursoziologie	Erziehungs- und Kultursoziologie	soziologieewf
+131	185	arbeitskreisportugallateinamer	Arbeitskreis Spanien-Portugal-Lateinamerika (ASPLA)	spanienportu
+132	186	differentiellepsych	Differentielle Psychologie	sozialpsych2
+133	187	innovativetechno	Innovative Technologien, Forschungsgruppe	betwinnovativ
+134	188	allgbwlmarketing	Allgemeine Betriebswirtschaftslehre, Marketing and Marktforschung	marktforschg
+135	189	careerservicesua	Career Service - Studierende & Arbeitswelt	studentarbeitswelt
+136	190	voelkerk	Völkerkunde	ethnologie
+137	191	nordphil	Nordische Philologie	skandinavistik
+138	192	hoersaele	Hörsäle	zzhoersaele
+139	193	arbeitsozialrecht	Arbeits- und Sozialrecht	deutscheurosozialrecht
+140	194	europgesellschaftsrecht	Europäisches Gesellschaftsrecht	buergrhandel
+141	198	paediatrischenephrologie	Pädiatrische Nephrologie, Immunologie und Hypertensiologie	kindernephro
+142	199	experimentellewirtschaft	Experimentelle Wirtschaftsforschung	koelnlabwifo
+143	200	fennistik	Fennistik	skandinavistik
+144	201	strafrechtsvergleichung	Strafrechtsvergleichung (ISV)	strafrecht2
+145	202	combinatorialoptimization	Combinatorial Optimization in Physics (Arbeitsgruppe)	emmynoether
+146	203	paedagogikgehoerlose	Pädagogik der Gehörlosen und Schwerhörigen	didaktikgehoerlose
+147	204	heilppsycho2	Heilpädagogische Psychologie (Prof. Nußbeck)	psychohpf2
+148	205	hoersprachpaed	Hörgeschädigtenpädagogik	paedhoergeschaedigt
+149	206	sprachgestpaed	Sprech- und Sprachgestörtenpädagogik	paedsprachstoerungen
+150	207	lernbehpaed	Lernbehindertenpädagogik	sondererziehunglernbehindert
+151	208	sozialearbeiterziehung	Soziale Arbeit und Erziehungshilfe	erziehungshilfesozarbeit
+152	209	geistigbehpaed	Geistigbehindertenpädagogik	paedagogikdidaktikgeistigbeh
+153	210	heilpmusik	Heilpädagogische Musikerziehung	musikerzhp
+154	211	heilpkunst	Heilpädagogische Kunsterziehung/ -therapie	kunsterzhp
+155	212	exzellenzcluster	Exzellenzcluster (CECAD)	cellularstress
+156	213	forist	Forschungsstelle für interkulturelle Studien	interkultur
+157	214	forges	Forschungsstelle für Gesundheitserziehung	gesunderz
+158	216	mathenaturbildung	Mathematische und naturwissenschaftliche Bildung	zentrummathebildung
+159	217	campusgruen	Campusgrün	gruenehsg
+160	218	centeragingstudies	Center for Aging Studies (CEFAS)	centrumalternstudien
+161	219	markenmanagement	Marketing und Markenmanagement	allgbwlmarkenmanagement
+162	221	empsozialforschung	Empirische Sozialforschung (Zentralarchiv)	zentralarchivemp
+163	222	managementgesundheitswesen	Management im Gesundheitswesen	allgbwlgesundheit
+164	223	unternehmensfinanzen	Unternehmensfinanzen	allgbwlcf
+165	224	schreibzentrumphilfak	Schreibzentrum (Phil.Fak.)	kompetenzzentrumschreiben
+166	225	koerperbehpaed	Körperbehindertenpädagogik	paedagogikmenschenbeeintr
+167	226	zentrumnetzwerkmedien	Zentrum Netzwerk Medien	netzwerkmedien
+168	227	kinderjpsychotherapie	Kinder- und Jugendlichenpsychotherapie	ausbildungszentrumkjp
+169	228	sprachrehabilitation	Sprachrehabilitation (Forschungsinstitut und Beratungsstelle)	forschsprachrehabilitation
+170	231	zentrumquartaerforschung	Zentrum für Quartärforschung und Geoarchäologie	centerqsga
+171	232	sozialrecht	Sozialrecht	deutscheurosozialrecht
+172	235	lehrbereichdeutsch	Lehrbereich Deutsch als Fremdsprache	deutschalsfremdsprache
+173	236	wohnheime	Wohnheime	studentheim
+174	237	fortbildung	Fortbildung und Zusatzqualifizierung	weiterbildg
+175	238	socrates	Socrates (Büro für Internationale Beziehungen, Med. Fak.)	zentrumintbezmed
+176	239	ausbildungsfoerderung	Ausbildungsförderung	bafoeg
+177	241	hoersaelemed	Hörsäle (Medizinische Fakultät)	zzmhoersaele
+178	246	internationaleskollegmorphomat	Internationales Kolleg Morphomata	morphomata
+179	247	audiopaedagogik	Audiopädagogik	didaktikgehoerlose
+180	248	evaluationuni	Evaluation der Lehre 	lehrevaluation
+181	249	theologiekath	Theologie, Katholische	katholtheol
+182	250	sprachentwicklung	Sprachentwicklung und Sprachdidaktik (Forschungsstelle)	forschungsprachentwicklung
+183	253	oekonometrie	Ökonometrie	wisostat
+184	255	ilias	Ilias-Team	elearning
+185	256	understandingapriori	Understanding and the Apriori (Emmy Noether Arbeitsgruppe)	emmynoetherphil
+186	257	studiensozial	Studien- und Sozialangelegenheiten der Studierenden	besonderestudien
+187	258	rechtstheorie	Rechtstheorie	buergrrechtstheorie
+188	259	sprachwiss	Sprachwissenschaft	allgsprachwiss
+189	260	wirtschaftlichestaatswiss	Wirtschaftliche Staatswissenschaften	centermacroeconomic
+190	261	oeffrechtkirchenrecht	Öffentliches Recht und Kirchenrecht	kirchenrecht
+191	262	macroeconomicresearch	Macro Economic Research Center	centermacroeconomic
+192	263	zentralereinkauf	Zentraler Einkauf	verwuni33
+193	265	ehumanities	eHumanities (Center)	colognecenterehumanities
+194	267	lateinamerikakompetenznetz	Lateinamerika (Kompetenznetz)	kompetenznetzlateinamerika
+195	268	makrooekonomikarbeitsmarkt	Makroökonomik und Arbeitsmarktökonomik	staatswiss4
+196	270	verfassungsrecht	Verfassungsrecht, Völkerrecht und Rechtsvergleichung	ostrecht
+197	272	frankreichstudien	Frankreich- und Frankophoniestudien (Interdisziplinäres Institut)	centruminterfrankreich
+198	274	rechenzentrum	Rechenzentrum (RRZK)	regionalesrechenzentrum
+199	275	theatreuniversitaire	Théâtre universitaire francophone de Cologne	projetsprojecteurs
+200	276	skillslab	Skillslab und Simulationszentrum (KISS)	kiss
+201	277	inetcampusgroup	INET Campus Group Cologne	studytour
+202	278	pim	PIM & CEMS Club	cems
+203	279	anatomie	Anatomie	zentrumanatomie
+204	280	staatswissbib	Bibliothek des Staatswissenschaftlichen Seminars	volkswirtschaftbib
+205	282	ostasiachina	Ostasiatisches Seminar - China-Studien	chinastudien
+206	283	ostasiajapan	Ostasiatisches Seminar - Japanologie	japanologie
+207	284	internatinvestitionsrecht	Internationales Investitionsrecht	internationalilcc
+208	285	zahnchirurg	Zahnärztliche Chirurgie und Mund-, Kiefer- und Gesichtschirurgie	mundkgchirurgie
+209	286	notaufnahme	Notaufnahme	zentralenotaufnahme
+210	287	viszeral	Viszeral- und Gefäßchirurgie	allgemeinchirurgie
+211	288	chirurgie	Chirurgie	allgemeinchirurgie
+212	289	pressemed	Presse und Kommunikation (Klinikum)	kommunikationmed
+213	290	mcm	MCM - Projekt Migration Campus Management	projektmigracampus
+214	291	competenceelearning	CompetenceCenter E-Learning	elearning
+215	293	musikethno	Musikethnologie, Europäische	ethnomusik
