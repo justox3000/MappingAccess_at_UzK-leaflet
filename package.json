@@ -24,7 +24,8 @@
   "license": "ISC",
   "dependencies": {
     "get-json": "^1.0.1",
-    "leaflet": "^1.5.1"
+    "leaflet": "^1.5.1",
+    "leaflet-ajax": "^2.1.0"
   },
   "devDependencies": {
     "beefy": "^2.1.8",

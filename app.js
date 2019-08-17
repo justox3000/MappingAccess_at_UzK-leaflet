@@ -6,12 +6,9 @@ var L = require('leaflet');
 When pulling in GeoJSON from external data source or hosting it locally,
 you’ll need to load the data using AJAX. jQuery provides a standard getJSON function
 which will load JSON from an external source and then fire a callback once the data has loaded.
+leaflet plugin: leaflet ajax
+ Add GeoJSON data via ajax or jsonp.
 */
-
-//use get-json module to get json documents (instaed of using jquery)
-var getJSON = require('get-json')
-
-
 
 // Initialize the map and set
 var map = L.map('map', {
@@ -35,3 +32,5 @@ var osm_mapnik = L.tileLayer('https://api.mapbox.com/styles/v1/jlambre1/cjtzjn4x
 	maxZoom: 19,
 	attribution: '&copy; OSM Mapnik <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
 }).addTo(map);
+
+var toilets_Layer = new L.GeoJSON.AJAX("https://raw.githubusercontent.com/justox3000/MappingAccess-UzK-leaflet/master/data/plain_geojsons/toilets.geojson");
