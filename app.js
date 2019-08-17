@@ -21,6 +21,7 @@ zoom.addTo(map); //Adding Zoom Control to map
 map.setView([50.927, 6.931], 16);
 
 // Initialize the base layer
+//offer alternative base layer; include base layer choice toggle on top right of mapbox
 var osm_mapnik = L.tileLayer('https://api.mapbox.com/styles/v1/jlambre1/cjtzjn4xv1ceo1fph8wuq1y9u/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1IjoianVzbGFtYnJlIiwiYSI6ImNqeTB1ZGo4eTAxdXUzbmsyOG1xcmQ1NWMifQ.IWZKtDwcnUCq03fo9-ualg', {
 	maxZoom: 19,
 	attribution: '&copy; OSM Mapnik <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'

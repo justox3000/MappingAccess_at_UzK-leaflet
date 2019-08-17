@@ -4,10 +4,12 @@
     margin-bottom: 1rem;
 }
 
+/* pasted this into the style.css which is for styling leaflet
 #map{
     border-style: solid;
     border-width: medium;
     border-radius: 3px;
     margin: 0;
-    height: 550px;
+    height: 550px; /*why do we set this on style.css alsoo?
 }
+*/

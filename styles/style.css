@@ -1,6 +1,10 @@
 /*leaflet custom stylesheet*/
 #map
 {
+    border-style: solid;
+    border-width: medium;
+    border-radius: 3px;
+    margin: 0;
     width: auto;
-    height: 500px;
+    height: 550px; /*500?*/
 }

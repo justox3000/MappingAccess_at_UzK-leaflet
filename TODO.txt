@@ -1,7 +1,5 @@
 -add datamodel for accessability information features to the plain data extracted from the Lageplan DB (Leonie; doing)
 
---> 
-
 -integrate Accessability Cloud data per API (leonie TODO)
 
 -choose and download icons, labels and design for displaying information provided by layers and accessability features (Justus)
@@ -10,10 +8,12 @@ accessability types:
 
 layer types:
 
-	-Universitätsgebäude (Unigebäude, Eingänge und Institute)
-	-Familiencampus (Wickelräume, Spielplätze, Eltern-Kindräume etc.)
+	-Universitï¿½tsgebï¿½ude (Unigebï¿½ude, Eingï¿½nge und Institute)
+	-Familiencampus (Wickelrï¿½ume, Spielplï¿½tze, Eltern-Kindrï¿½ume etc.)
 	-Toiletten
-	-Parkplätze
+	-Parkplï¿½tze
 
--Create html "Mitmachen" with info about Map-A-Thons und Datensatz zum Download (Justus TODO)
--Create html "Statistik" (Justus TODO)
+-Fill html "Mitmachen" with info about Map-A-Thons und Datensatz zum Download (Justus TODO)
+
+-Fill html "Statistik" --> Todo when data is in and enough time left (plan: basic analytics such as frequency statistics of
+specific map features to be displayed on user request)
