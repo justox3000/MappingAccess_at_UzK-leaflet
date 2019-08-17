@@ -1,3 +1,5 @@
+- Ich finde dass wie bei Wheelmap.org die Karte nicht in iener Box sein sollte (layout, justus)
+
 -add datamodel for accessability information features to the plain data extracted from the Lageplan DB (Leonie; doing)
 
 -integrate Accessability Cloud data per API (leonie TODO)
@@ -17,3 +19,8 @@ layer types:
 
 -Fill html "Statistik" --> Todo when data is in and enough time left (plan: basic analytics such as frequency statistics of
 specific map features to be displayed on user request)
+
+
+-Add Geojson Search function (Justus)
+
+-Add Legende, Layer Auswahl und Toggle für Basiskarten sowie Feature-Anzeigemöglichkeiten

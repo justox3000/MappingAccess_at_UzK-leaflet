@@ -2,22 +2,31 @@
 var L = require('leaflet');
 
 
-// Initialize the map
+/*
+When pulling in GeoJSON from external data source or hosting it locally,
+you’ll need to load the data using AJAX. jQuery provides a standard getJSON function
+which will load JSON from an external source and then fire a callback once the data has loaded.
+*/
+
+//use get-json module to get json documents (instaed of using jquery)
+var getJSON = require('get-json')
+
+
+
+// Initialize the map and set
 var map = L.map('map', {
+  //zoom control options
   scrollWheelZoom: true,
-  zoomControl: false
+  zoomControl: false,
 });
 
-//zoom control options
-var zoomOptions = {
-	zoomInText: '+',
-	zoomOutText: '-',
-	position: 'bottomright',
-};
-var zoom = L.control.zoom(zoomOptions); //Creating Zoom Control
-zoom.addTo(map); //Adding Zoom Control to map
+//create custom zoom Control on right bottom
+var zoomControl = L.control.zoom(
+  zoomOptions = {position: 'bottomright'}
+).addTo(map);
 
 // Set the position and zoom level of the map
+//later set so that we always automatically zoom to see the data
 map.setView([50.927, 6.931], 16);
 
 // Initialize the base layer
