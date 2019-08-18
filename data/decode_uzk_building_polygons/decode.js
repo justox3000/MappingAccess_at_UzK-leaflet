@@ -79,9 +79,8 @@ fs.readFile('./data/decode_uzk_building_polygons/buildings_polyline.geojson', 'u
     //write the result to file
     console.log(JSON.stringify(json));
 
-    fs.writeFile("./data/plain_geojsons/buildings_polygons.geojson",JSON.stringify(json), "utf-8", (err) => {
+    fs.writeFile("./data/lageplan_matuzk_geoJSONFiles/buildings_polygons.geojson",JSON.stringify(json), "utf-8", (err) => {
       if (err) console.log(err);
-
       console.log("Successfully Written to File.");
     });
 
@@ -89,8 +88,3 @@ fs.readFile('./data/decode_uzk_building_polygons/buildings_polyline.geojson', 'u
     console.error(err)
   }
 });
-
-/*
-//when it has been replaced for all objects write it to the file.
-
-*/

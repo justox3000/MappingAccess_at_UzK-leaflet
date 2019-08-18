@@ -10,16 +10,16 @@ accessability types:
 
 layer types:
 
-	-Universit�tsgeb�ude (Unigeb�ude, Eing�nge und Institute)
+	-Universit�tsgeb�ude (Unigeb�ude-Daten und Instituts-Daten als Attribute)
 	-Familiencampus (Wickelr�ume, Spielpl�tze, Eltern-Kindr�ume etc.)
 	-Toiletten
 	-Parkpl�tze
+	-Eingänge der Unigebäude
 
 -Fill html "Mitmachen" with info about Map-A-Thons und Datensatz zum Download (Justus TODO)
 
 -Fill html "Statistik" --> Todo when data is in and enough time left (plan: basic analytics such as frequency statistics of
 specific map features to be displayed on user request)
-
 
 -Add Geojson Search function (Justus)
 
