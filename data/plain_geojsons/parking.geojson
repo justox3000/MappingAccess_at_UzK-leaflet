@@ -1,7 +1,6 @@
 {
 "type": "FeatureCollection",
 "name": "parking",
-"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
 "features": [
 { "type": "Feature", "properties": { "parking_id": 2, "parking_lat": 50.930438995400003, "parking_lng": 6.9272017479, "parking_affiliation": 1 }, "geometry": { "type": "Point", "coordinates": [ 6.9272017479, 50.930438995400003 ] } },
 { "type": "Feature", "properties": { "parking_id": 3, "parking_lat": 50.928981780999997, "parking_lng": 6.9281888008000001, "parking_affiliation": 1 }, "geometry": { "type": "Point", "coordinates": [ 6.9281888008, 50.928981781 ] } },

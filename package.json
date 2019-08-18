@@ -23,6 +23,8 @@
   ],
   "license": "ISC",
   "dependencies": {
+    "fs": "0.0.1-security",
+    "geojson-polyline": "^1.0.3",
     "get-json": "^1.0.1",
     "leaflet": "^1.5.1",
     "leaflet-ajax": "^2.1.0"
