@@ -23,13 +23,16 @@
   ],
   "license": "ISC",
   "dependencies": {
+    "@sozialhelden/ac-format": "^7.4.3",
     "fs": "0.0.1-security",
     "geojson-polyline": "^1.0.3",
     "get-json": "^1.0.1",
+    "js-quantities": "^1.7.4",
     "leaflet": "^1.5.1",
     "leaflet-ajax": "^2.1.0",
     "leaflet-tilelayer-geojson": "^1.0.4",
-    "leaflet.tilelayer.colorfilter": "^1.2.5"
+    "leaflet.tilelayer.colorfilter": "^1.2.5",
+    "simpl-schema": "^1.5.5"
   },
   "devDependencies": {
     "beefy": "^2.1.8",
