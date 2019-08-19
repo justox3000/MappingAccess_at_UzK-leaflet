@@ -308,4 +308,4 @@
 {"id":"404","nummer":"157","strasse":"An St. Laurentius","hausnummer":"1","plz":"50931","ort":"Köln","bild":"","name":"St. Laurentius","dummy":"0","zugehoerigkeit":"0","liste":"standard","praefix_x":"0","etagenplan":"","temp":"","markierung_x":"0","markierung_y":"0","bereich_x1":"0","bereich_x2":"0","bereich_y1":"0","bereich_y2":"0","stadtplanlink":"0"},
 {"id":"405","nummer":"101BT3","strasse":"Universitätsstr.","hausnummer":"24","plz":"50931","ort":"Köln","bild":"","name":"Erweiterungsbau - Zentralcampus der UzK [BT 3]","dummy":"0","zugehoerigkeit":"0","liste":"standard","praefix_x":"0","etagenplan":"","temp":"","markierung_x":"0","markierung_y":"0","bereich_x1":"0","bereich_x2":"0","bereich_y1":"0","bereich_y2":"0","stadtplanlink":"0"}
 ]
-}
+};
