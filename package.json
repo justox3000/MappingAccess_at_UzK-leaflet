@@ -27,7 +27,9 @@
     "geojson-polyline": "^1.0.3",
     "get-json": "^1.0.1",
     "leaflet": "^1.5.1",
-    "leaflet-ajax": "^2.1.0"
+    "leaflet-ajax": "^2.1.0",
+    "leaflet-tilelayer-geojson": "^1.0.4",
+    "leaflet.tilelayer.colorfilter": "^1.2.5"
   },
   "devDependencies": {
     "beefy": "^2.1.8",
