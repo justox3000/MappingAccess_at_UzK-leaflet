@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <title>Mapping Acces @UzK</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
 
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
@@ -15,6 +15,23 @@
     <!-- Leaflet CSS-->
       <link rel="stylesheet" href="node_modules/leaflet/dist/leaflet.css">
       <link rel="stylesheet" href="styles/style.css">
+
+    <!-- Leaflet CDN-->
+    <script src="//cdn.jsdelivr.net/leaflet/0.7.3/leaflet.js"></script>
+
+    <!--Locate-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet.locatecontrol@[VERSION]/dist/L.Control.Locate.min.css" />
+
+<script src="https://cdn.jsdelivr.net/npm/leaflet.locatecontrol@[VERSION]/dist/L.Control.Locate.min.js" charset="utf-8"></script>
+
+    <!-- jQuery CDN-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!--Switching Basemaps-->
+    <link rel="stylesheet" href="L.Control.Basemaps.css" />
+    <script src="L.Control.Basemaps-min.js"></script>
+    
 </head>
 
 <body>
@@ -43,7 +60,12 @@
 
 <div class="container-fluid" aria-hidden="true" id="map-container">
     <!-- Map -->
-    <div id="map"></div>
+    <div id="map">
+    
+    </div>
+   
+    <!-- Adding GeoJSON Layer Gebäude-->
+    <script src="data/lageplan_matuzk_geoJSONFiles/buildings_incl_entries.js"></script>
     <!--point to bundle.js which is created by browserify and beefy-->
     <script src="bundle.js"></script>
 
