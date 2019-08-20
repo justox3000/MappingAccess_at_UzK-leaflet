@@ -29,12 +29,12 @@ var cartoMap = L.tileLayer(cartoURL, {attribution: cartoAttrib});
 var stamenMap = L.tileLayer(stamenURL,{
   attribution: stamenAttrib,
   subdomains: 'abcd',
-
   ext: 'png'
 });
 
 //Map creation
 var map = L.map('map',{
+  zoomControl:false,
   layers: [osmMap]
 }).setView([50.927, 6.931], 16);
 
@@ -47,9 +47,6 @@ var baseLayers = {
 
  //Add baseLayers to map as control layers
  L.control.layers(baseLayers).addTo(map);
-
-
-
 
 //create custom zoom Control on right bottom
 var zoomControl = L.control.zoom(
@@ -64,4 +61,4 @@ var osm_mapnik = L.tileLayer('https://api.mapbox.com/styles/v1/jlambre1/cjtzjn4x
 }).addTo(map);
 
 
-var toilets_Layer = new L.GeoJSON.AJAX("https://raw.githubusercontent.com/justox3000/MappingAccess-UzK-leaflet/master/data/plain_geojsons/toilets.geojson");
+//var toilets_Layer = new L.GeoJSON.AJAX("https://raw.githubusercontent.com/justox3000/MappingAccess-UzK-leaflet/master/data/plain_geojsons/toilets.geojson");
