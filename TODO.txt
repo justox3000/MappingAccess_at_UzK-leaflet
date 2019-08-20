@@ -1,15 +1,11 @@
 - Ich finde dass wie bei Wheelmap.org die Karte nicht in iener Box sein sollte (layout, justus)
 
--add datamodel for accessability information features to the plain data extracted from the Lageplan DB (Leonie; doing)
-
 -integrate Accessability Cloud data per API (leonie TODO)
 
 -choose and download icons, labels and design for displaying information provided by layers and accessability features (Justus)
 
-accessability types:
 
-layer types:
-
+Info:
 	-Universit�tsgeb�ude (Unigeb�ude-Daten und Instituts-Daten als Attribute)
 	-Familiencampus (Wickelr�ume, Spielpl�tze, Eltern-Kindr�ume etc.)
 	-Toiletten

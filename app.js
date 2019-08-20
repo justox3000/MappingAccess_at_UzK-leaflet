@@ -59,6 +59,3 @@ var osm_mapnik = L.tileLayer('https://api.mapbox.com/styles/v1/jlambre1/cjtzjn4x
 	maxZoom: 19,
 	attribution: '&copy; OSM Mapnik <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
 }).addTo(map);
-
-
-//var toilets_Layer = new L.GeoJSON.AJAX("https://raw.githubusercontent.com/justox3000/MappingAccess-UzK-leaflet/master/data/plain_geojsons/toilets.geojson");
