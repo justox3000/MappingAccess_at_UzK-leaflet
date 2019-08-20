@@ -29,7 +29,7 @@ var cartoMap = L.tileLayer(cartoURL, {attribution: cartoAttrib});
 var stamenMap = L.tileLayer(stamenURL,{
   attribution: stamenAttrib,
   subdomains: 'abcd',
- 
+
   ext: 'png'
 });
 
