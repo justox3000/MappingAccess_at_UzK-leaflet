@@ -14,12 +14,7 @@ var osmLink = '<a href="http://openstreetmap.org">OpenStreetMap</a>';
 var osmURL = 'http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png';
 var osmAttrib = '&copy; ' + osmLink;
 
-/*
-//Carto tiles attribution and URL
-var cartoLink = '<a href="http://cartodb.com/attributions">CartoDB</a>';
-var cartoURL = 'http://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}.png';
-var cartoAttrib = '&copy; ' + osmLink + ' &copy; ' + cartoLink;
-*/
+
 
 //Stamen Toner tiles attribution and URL
 var stamenURL = 'http://stamen-tiles-{s}.a.ssl.fastly.net/toner/{z}/{x}/{y}.{ext}';
@@ -27,7 +22,6 @@ var stamenAttrib = 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, 
 
 //Creation of map tiles
 var osmMap = L.tileLayer(osmURL, {attribution: osmAttrib});
-//var cartoMap = L.tileLayer(cartoURL, {attribution: cartoAttrib});
 var stamenMap = L.tileLayer(stamenURL,{
   attribution: stamenAttrib,
   subdomains: 'abcd',
@@ -43,7 +37,7 @@ var map = L.map('map',{
 //Base layers definition and addition
 var baseLayers = {
   "OSM Mapnik": osmMap,
-  //"Carto DarkMatter": cartoMap,
+
   "Stamen Toner": stamenMap
 };
 
