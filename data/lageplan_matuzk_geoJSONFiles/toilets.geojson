@@ -3,11 +3,15 @@
 "name": "toilets",
 "features": [
 { "type": "Feature",
-  "properties": { "toilet_id": 81, "toilet_lat": 50.934619903600002, "toilet_lng": 6.9208569527000003, "toilet_is_unisex": 1 },
+  "properties": {
+    "toilet_id": 81,
+    "toilet_lat": 50.934619903600002, 
+    "toilet_lng": 6.9208569527000003,
+    "toilet_is_unisex": 1 },
    "geometry": { "type": "Point", "coordinates": [ 6.9208569527, 50.934619903600002 ] } },
+
 { "type": "Feature", "properties": { "toilet_id": 82, "toilet_lat": 50.927970886200001, "toilet_lng": 6.9266929625999998, "toilet_is_unisex": 1 }, "geometry": { "type": "Point", "coordinates": [ 6.9266929626, 50.927970886200001 ] } },
 { "type": "Feature", "properties": { "toilet_id": 83, "toilet_lat": 50.928298950200002, "toilet_lng": 6.928732872, "toilet_is_unisex": 1 }, "geometry": { "type": "Point", "coordinates": [ 6.928732872, 50.928298950200002 ] } },
 { "type": "Feature", "properties": { "toilet_id": 84, "toilet_lat": 50.927524566700001, "toilet_lng": 6.9291338921000003, "toilet_is_unisex": 1 }, "geometry": { "type": "Point", "coordinates": [ 6.9291338921, 50.927524566700001 ] } },
 { "type": "Feature", "properties": { "toilet_id": 85, "toilet_lat": 50.928222656199999, "toilet_lng": 6.9335398674000004, "toilet_is_unisex": 1 }, "geometry": { "type": "Point", "coordinates": [ 6.9335398674, 50.928222656199999 ] } }
-]
-}
+]}

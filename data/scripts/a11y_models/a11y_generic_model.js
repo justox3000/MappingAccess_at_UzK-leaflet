@@ -18,6 +18,10 @@ accessability = {//describes accessability of a place
   },
   entrances:[{ //describes accessability of entrances to a place
     entrance:{//describes entrance to a place
+      entry_id:undefined, //id that the rrzk gave the entrance
+      entry_lat:undefined,//latitude info for entrance
+      entry_lng:undefined, //longitude info for entrance
+      entry_bin_accessability:undefined, //binary accessability info, true means accessible for wheelchair users (determined by RRZK Lageplan)
       name: "", //name to differentiate from other entrances
       door:{//describes the door of an enttrance or one of its facilities such as toilet
         doorOpensToOutside: undefined, //true if door opens to outside
@@ -27,7 +31,7 @@ accessability = {//describes accessability of a place
         width:{//describes width of a door
           Quantity:{//object to describe a Quantity
               isEstimate: undefined, //true if number was estimated, false if measured
-              value:0, //value of measurement, e.g. 20
+              value:undefined, //value of measurement, e.g. 20
               unit: "" //unit, e.g. cm, m...
           }
         }
@@ -98,6 +102,9 @@ accessability = {//describes accessability of a place
 
   restrooms:[{//describes accessability of restroom in place
     restroom:{
+      toilet_id:undefined, //id of toilet given by RRZK lageplan
+      toilet_lat: undefined, //lat info about toilet
+      toilet_lng: undefined,//lng info about toilet
       isUnisex: undefined, //true if unisex toilet
       changingTable: undefined,//true if it has a changing table
       isFemale: undefined, //true if for females
@@ -188,7 +195,6 @@ accessability = {//describes accessability of a place
         }
       }
   },
-
   staff:{//describe presence of staff and their qualification
     canSeeVisitorsFromInside: undefined, //true if staff can see people outside
     offersAssistance: undefined, //true if staff helps disabled users
