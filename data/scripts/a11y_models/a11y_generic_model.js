@@ -200,5 +200,5 @@ accessability = {//describes accessability of a place
   hasTactileGuidestrips: undefined, //true if venue has tactile guide strips on floor or wall
   isQuiet: undefined, //if venue is rated as a quiet or noisy place
   isWellLit: undefined, //if venue is rated as well lit or dim
-}
+};
 console.log(JSON.stringify(accessability));

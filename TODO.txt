@@ -1,9 +1,6 @@
 - Ich finde dass wie bei Wheelmap.org die Karte nicht in iener Box sein sollte (layout, justus)
 
--integrate Accessability Cloud data per API (leonie TODO)
-
 -choose and download icons, labels and design for displaying information provided by layers and accessability features (Justus)
-
 
 Info:
 	-Universit�tsgeb�ude (Unigeb�ude-Daten und Instituts-Daten als Attribute)
@@ -12,11 +9,11 @@ Info:
 	-Parkpl�tze
 	-Eingänge der Unigebäude
 
--Fill html "Mitmachen" with info about Map-A-Thons und Datensatz zum Download (Justus TODO)
-
--Fill html "Statistik" --> Todo when data is in and enough time left (plan: basic analytics such as frequency statistics of
-specific map features to be displayed on user request)
+-Fill html "Mitmachen" with info about Map-A-Thons und Datensatz zum Download (Leonie TODO)
 
 -Add Geojson Search function (Justus)
 
 -Add Legende, Layer Auswahl und Toggle für Basiskarten sowie Feature-Anzeigemöglichkeiten
+
+
+Was soll alles angezeigt werden in Leaflet als Popup?

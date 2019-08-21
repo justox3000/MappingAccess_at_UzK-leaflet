@@ -10,8 +10,7 @@
 //undefined always indicates unknown, null is used for not applicable
 //or for "there is none"
 
-roomsAccessability ={
-  rooms:[{//describes accessability of rooms that are not restrooms in place
+rooms=[{//describes accessability of rooms that are not restrooms in place
   room:{//describes accessability of rooms
     name:"", //use to differentiate from other rooms
     description:"", //space for narrated experience about usage of room
@@ -55,5 +54,4 @@ roomsAccessability ={
         }
       }],
   }
-}]}
-console.log(JSON.stringify(roomsAccessability));
+}];
