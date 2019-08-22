@@ -1,16 +1,4 @@
-/*custom pages stylesheet*/
 #map-container{
-    margin-top: 1rem;
+    margin-top: 30rem;
     margin-bottom: 1rem;
 }
-
-
-/* pasted this into the style.css which is for styling leaflet
-#map{
-    border-style: solid;
-    border-width: medium;
-    border-radius: 3px;
-    margin: 0;
-    height: 550px; /*why do we set this on style.css alsoo?
-}
-*/

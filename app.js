@@ -14,8 +14,6 @@ var osmLink = '<a href="http://openstreetmap.org">OpenStreetMap</a>';
 var osmURL = 'http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png';
 var osmAttrib = '&copy; ' + osmLink;
 
-
-
 //Stamen Toner tiles attribution and URL
 var stamenURL = 'http://stamen-tiles-{s}.a.ssl.fastly.net/toner/{z}/{x}/{y}.{ext}';
 var stamenAttrib = 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a> &mdash; Map data &copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>';
@@ -37,9 +35,10 @@ var map = L.map('map',{
 //Base layers definition and addition
 var baseLayers = {
   "OSM Mapnik": osmMap,
-
   "Stamen Toner": stamenMap
 };
+
+
 
  //Add baseLayers to map as control layers
  L.control.layers(baseLayers).addTo(map);
