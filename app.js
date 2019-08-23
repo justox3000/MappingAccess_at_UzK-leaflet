@@ -9,6 +9,7 @@ var map = L.map('map', {
 // Set the position and zoom level of the map
 map.setView([47.70, 13.35], 7);
 
+<<<<<<< HEAD
 /*	Variety of base layers */
 var osm_mapnik = L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 	maxZoom: 19,
@@ -34,6 +35,27 @@ var osm_hot = L.tileLayer('http://{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png'
 	maxZoom: 19,
 	attribution: '&copy; OSM Hot <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>, Tiles courtesy of <a href="http://hot.openstreetmap.org/" target="_blank">Humanitarian OpenStreetMap Team</a>'
 });
+=======
+
+//create custom zoom Control on right bottom
+var zoomControl = L.control.zoom(
+  zoomOptions = {position: 'bottomright'}
+).addTo(map);
+
+
+//Base layers definition and addition
+var baseLayers = {
+  "OSM Mapnik": osmMap,
+  "Stamen Toner": stamenMap
+};
+
+ //Add baseLayers to map as control layers
+ L.control.layers(baseLayers).addTo(map);
+
+
+ //Fullscreen button
+ map.addControl(new L.Control.Fullscreen());
+>>>>>>> 0eaffbd00032a0916365e27e3f8cf17aa99509f2
 
 var osm_topo = L.tileLayer('http://{s}.tile.opentopomap.org/{z}/{x}/{y}.png', {
 	maxZoom: 17,
@@ -55,6 +77,7 @@ var stamen_TonerBackground = L.tileLayer('http://stamen-tiles-{s}.a.ssl.fastly.n
 	maxZoom: 20,
 	ext: 'png'
 });
+<<<<<<< HEAD
 
 var stamen_TonerLite = L.tileLayer('http://stamen-tiles-{s}.a.ssl.fastly.net/toner-lite/{z}/{x}/{y}.{ext}', {
 	attribution: 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a> &mdash; Map data &copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>',
@@ -123,3 +146,5 @@ var baseLayers = {
 
 // Add baseLayers to the map
 L.control.layers(baseLayers, null).addTo(map);
+=======
+>>>>>>> 0eaffbd00032a0916365e27e3f8cf17aa99509f2

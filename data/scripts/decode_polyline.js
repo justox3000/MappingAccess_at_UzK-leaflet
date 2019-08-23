@@ -43,7 +43,7 @@ var json=null; //variable to store the file which stores the json object to be m
 
 //var decoded_json = null; //variable to store the file to which  the decoded json object will be written ("buildings_polygons.geojson")
 
-fs.readFile('./data/lageplan_matuzk_geoJSONFiles/buildings_polyline.geojson', 'utf8', (err, fileContents) => {
+fs.readFile('./data/lageplan_matuzk_geoJSONFiles/buildings_without_institutions_polyline_dedup.geojson', 'utf8', (err, fileContents) => {
   if (err) {
     console.error(err)
     return
@@ -79,7 +79,7 @@ fs.readFile('./data/lageplan_matuzk_geoJSONFiles/buildings_polyline.geojson', 'u
     //write the result to file
     console.log(JSON.stringify(json));
 
-    fs.writeFile("./data/lageplan_matuzk_geoJSONFiles/buildings_polygons.geojson",JSON.stringify(json), "utf-8", (err) => {
+    fs.writeFile("./data/lageplan_matuzk_geoJSONFiles/buildings_withtout_institutions_polygons.geojson",JSON.stringify(json), "utf-8", (err) => {
       if (err) console.log(err);
       console.log("Successfully Written to File.");
     });
