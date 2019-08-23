@@ -4,7 +4,6 @@
   "description": "interactive map application for providing information on accessability on University of Cologne Campus",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "beefy app.js:bundle.js --live",
     "bundle": "browserify app.js -o bundle.js"
   },
@@ -24,6 +23,7 @@
   "license": "ISC",
   "dependencies": {
     "@sozialhelden/ac-format": "^7.4.3",
+    "bootstrap": "^4.3.1",
     "fs": "0.0.1-security",
     "geojson-polyline": "^1.0.3",
     "get-json": "^1.0.1",
@@ -38,6 +38,6 @@
   },
   "devDependencies": {
     "beefy": "^2.1.8",
-    "browserify": "^16.3.0"
+    "browserify": "^16.5.0"
   }
 }
