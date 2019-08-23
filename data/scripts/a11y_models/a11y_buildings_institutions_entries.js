@@ -4,7 +4,6 @@
 
 //write all entry data into the entrances information.
 //one building can have muultiple entrances with different accessability ratings.
-//thus, wif bin_accessability is 0,
 /*
 "entries_id": 22,
 "entries_gebaude_id": 318,
@@ -13,10 +12,8 @@
 "entries_bin_accessability": 0
   */
 
-
-
-entrances=[],
-entrance= { //describes accessability of entrances to a place
+/*
+  entrances=[{ //describes accessability of entrances to a place
     entrance:{//describes entrance to a place
       entry_id:0, //id that the rrzk gave the entrance
       entry_lat:0,//latitude info for entrance
@@ -53,7 +50,7 @@ entrance= { //describes accessability of entrances to a place
             }
         }],
       }
-    }
+    }],
 
 
   //map onto buildings by matching building_id
@@ -61,23 +58,9 @@ entrance= { //describes accessability of entrances to a place
   //if it does not contain the same enties_id yet.
   //finally remove the default option with entries_id 0 by deleting that object
 
-  /*
-  entrances:[{ //describes accessability of entrances to a place
-    entrance:{//describes entrance to a place
-
-      entry_id:0, //id that the rrzk gave the entrance
-      entry_lat:0,//latitude info for entrance
-      entry_lng:0, //longitude info for entrance
-      entry_bin_accessability:0, //1  means accessible for wheelchair users (determined by RRZK Lageplan)
-
-  */
-
-//then delete the entry data from the properties of the building
-
-
 //do the same with toilets if toilets_building_id matches the building_id, add it as a toilet to the toilet dataframe
 //use unisex value "toilet_is_unisex": 1, for entering isUnisex true or false
-/*
+
 
   restrooms:[{//describes accessability of restroom in place
     restroom:{
