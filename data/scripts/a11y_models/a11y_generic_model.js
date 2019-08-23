@@ -13,8 +13,8 @@ accessability = { //describes accessability of a place
    isLevel:false,//true if ground is level
    sidewalkConditions:"",//space to narrate subjective experience on ground
   },
-  entrances:[{ //describes accessability of entrances to a place
-    entrance:{//describes entrance to a place
+  entrances:[ //describes accessability of entrances to a place
+    {//describes entrance to a place
       entry_id:0, //id that the rrzk gave the entrance
       entry_lat:0,//latitude info for entrance
       entry_lng:0, //longitude info for entrance
@@ -49,10 +49,9 @@ accessability = { //describes accessability of a place
               }
             }
         }],
-      }
-    }],
-  rooms:[{//describes accessability of rooms that are not restrooms in place
-    room:{//describes accessability of rooms
+      }],
+  rooms:[//describes accessability of rooms that are not restrooms in place, e.g. cafes, seminar rooms etc.
+    {//describes accessability of rooms
       name:"", //use to differentiate from other rooms
       description:"", //space for narrated experience about usage of room
       smokingProhibited:true,
@@ -60,10 +59,10 @@ accessability = { //describes accessability of a place
       hasTactileGuidestrips: false, //true if venue has tactile guide strips on floor or wall
       isQuiet: false, //if venue is rated as a quiet or noisy place
       isWellLit: false, //if venue is rated as well lit or dim
-      entrances:[{ //describes accessability of entrances to a place
-        entrance:{//describes entrance to a place
+      entrances:[
+        { //describes accessability of entrances to a place
           name: "", //name to differentiate from other entrances
-          door:{//describes the door of an enttrance or one of its facilities such as toilet
+          door:{ //describes the door of an enttrance or one of its facilities such as toilet
             doorOpensToOutside: true, //true if door opens to outside
             hasErgonomicDoorHandle: false, //true if door's handle is easy to use
             isAutomatic: false, //true if door is automatic
@@ -90,20 +89,17 @@ accessability = { //describes accessability of a place
                   value:0, //value of measurement, e.g. 20
                   unit: "m" //unit, e.g. cm, m...
                   }
-                }
+              }
             }],
-          }
         }],
-    }
-  }],
-
-  restrooms:[{//describes accessability of restroom in place
-    restroom:{
+    }],
+  restrooms:[//describes accessability of restroom in place
+  {
       toilet_id:0, //id of toilet given by RRZK lageplan
       toilet_lat: 0, //lat info about toilet
       toilet_lng: 0,//lng info about toilet
       toilet_building_id:0, //building id where the toilet is located
-      isUnisex: false, //true if unisex toilet
+      toilet_is_unisex: false, //true if unisex toilet
       changingTable: false,//true if it has a changing table
       isFemale: false, //true if for females
       isMale: false, //true if for males
@@ -181,8 +177,7 @@ accessability = { //describes accessability of a place
           }
         }
       }
-    }
-  }],
+    }],
   pathways:{//describe pathways/hallways in a place
     width:{//width constraints of all pathways inside a place
         Quantity:{//object to describe a Quantity
@@ -202,6 +197,10 @@ accessability = { //describes accessability of a place
   hasTactileGuidestrips: false, //true if venue has tactile guide strips on floor or wall
   isQuiet: false, //if venue is rated as a quiet or noisy place
   isWellLit: false, //if venue is rated as well lit or dim
+  hasConstructionSite:{//determine if it has a construction site currently
+    description:"",//describe the site and its  properties
+    plannedEndingDate:"0000-01-01",// forseeable ending date
+  }
 };
 
 //console.log(JSON.stringify(accessability));
