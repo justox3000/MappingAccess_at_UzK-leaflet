@@ -51,6 +51,7 @@ fs.readFile('./data/lageplan_matuzk_geoJSONFiles/buildings_without_institutions_
                   }
                 }
               }
+
               //finally write this to a file
               writeToFile(json);
 

@@ -13,6 +13,49 @@
 "entries_bin_accessability": 0
   */
 
+
+
+entrances=[],
+entrance= { //describes accessability of entrances to a place
+    entrance:{//describes entrance to a place
+      entry_id:0, //id that the rrzk gave the entrance
+      entry_lat:0,//latitude info for entrance
+      entry_lng:0, //longitude info for entrance
+      entry_bin_accessability:0, //1  means accessible for wheelchair users (determined by RRZK Lageplan)
+      name: "", //name to differentiate from other entrances
+      door:{//describes the door of an enttrance or one of its facilities such as toilet
+        doorOpensToOutside: true, //true if door opens to outside
+        hasErgonomicDoorHandle: false, //true if door's handle is easy to use
+        isAutomatic: false, //true if door is automatic
+        isRevolving: false, //true if door is revolving
+        width:{//describes width of a door
+          Quantity:{//object to describe a Quantity
+              isEstimate: true, //true if number was estimated, false if measured
+              value:0, //value of measurement, e.g. 20
+              unit: "m" //unit, e.g. cm, m...
+          }
+        }
+      },
+      hasRamp:false, //true if entrance has fixed or removable ramp
+      isLevel:true, //true if entrance has no step and needs no ramp
+      stairs:[{  //describes on or more stairs in the place
+          name: "", //a string to differentiate the staircase from others in the same place
+          hasAlternatives: false, //if there are escalators, elevators to use instead of stairs
+          count: 0, //number of steps
+          hasBrailleNavigation: false, //true if braille for the stairecase
+          hasHandRail: false, //true if there is a handrail for the stairecase
+          stepHeight: {//indicates how high steps are
+            Quantity:{
+              isEstimate: true, //true if number was estimated, false if measured
+              value:0, //value of measurement, e.g. 20
+              unit: "m" //unit, e.g. cm, m...
+              }
+            }
+        }],
+      }
+    }
+
+
   //map onto buildings by matching building_id
   //if entries_gebaude_id matches building_id fill the feature accessability>entrances>entrance with a new object containing that information
   //if it does not contain the same enties_id yet.

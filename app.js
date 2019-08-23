@@ -24,16 +24,22 @@ var map = L.map('map',{
   layers: [osmMap]
 }).setView([50.927, 6.931], 16);
 
+
+//create custom zoom Control on right bottom
+var zoomControl = L.control.zoom(
+  zoomOptions = {position: 'bottomright'}
+).addTo(map);
+
+
 //Base layers definition and addition
 var baseLayers = {
   "OSM Mapnik": osmMap,
   "Stamen Toner": stamenMap
 };
 
-
-
  //Add baseLayers to map as control layers
  L.control.layers(baseLayers).addTo(map);
+
 
  //Fullscreen button
  map.addControl(new L.Control.Fullscreen());
@@ -57,15 +63,3 @@ map.on('fullscreenchange', function () {
         console.log('exited fullscreen');
     }
 });
-
-//create custom zoom Control on right bottom
-var zoomControl = L.control.zoom(
-  zoomOptions = {position: 'bottomright'}
-).addTo(map);
-
-// Initialize the base layer
-//offer alternative base layer; include base layer choice toggle on top right of mapbox
-var osm_mapnik = L.tileLayer('https://api.mapbox.com/styles/v1/jlambre1/cjtzjn4xv1ceo1fph8wuq1y9u/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1IjoianVzbGFtYnJlIiwiYSI6ImNqeTB1ZGo4eTAxdXUzbmsyOG1xcmQ1NWMifQ.IWZKtDwcnUCq03fo9-ualg', {
-	maxZoom: 19,
-	attribution: '&copy; OSM Mapnik <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
-}).addTo(map);

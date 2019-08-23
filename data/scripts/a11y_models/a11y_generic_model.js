@@ -8,7 +8,7 @@
 //conventions:
 //default values; replaced by input from user data
 
-accessability = {//describes accessability of a place
+accessability = { //describes accessability of a place
   description: "", //text space for narration on accessability/subjective experiences
   ground: {   //describes ground conditions
    evenPavemement: false,//true if pavement is even not plastered
@@ -204,4 +204,5 @@ accessability = {//describes accessability of a place
   isQuiet: false, //if venue is rated as a quiet or noisy place
   isWellLit: false, //if venue is rated as well lit or dim
 };
-console.log(JSON.stringify(accessability));
+
+//console.log(JSON.stringify(accessability));
