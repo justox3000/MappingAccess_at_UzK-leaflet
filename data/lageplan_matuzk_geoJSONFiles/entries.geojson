@@ -3,7 +3,14 @@
 "name": "entries",
 "features": [
 { "type": "Feature",
-  "properties": { "entries_id": 22, "entries_gebaude_id": 318, "entries_lat": 50.936107635500001, "entries_lng": 6.9218549728000003, "entries_bin_accessability": 0 }, "geometry": { "type": "Point", "coordinates": [ 6.9218549728, 50.936107635500001 ] } },
+  "properties": {
+    "entries_id": 22,
+    "entries_gebaude_id": 318,
+    "entries_lat": 50.936107635500001,
+    "entries_lng": 6.9218549728000003,
+    "entries_bin_accessability": 0 },
+    "geometry": { "type": "Point", "coordinates": [ 6.9218549728, 50.936107635500001 ] }
+  },
 { "type": "Feature", "properties": { "entries_id": 33, "entries_gebaude_id": 93, "entries_lat": 50.934501647899999, "entries_lng": 6.920609951, "entries_bin_accessability": 1 }, "geometry": { "type": "Point", "coordinates": [ 6.920609951, 50.934501647899999 ] } },
 { "type": "Feature", "properties": { "entries_id": 36, "entries_gebaude_id": 292, "entries_lat": 50.933444976799997, "entries_lng": 6.920124054, "entries_bin_accessability": 0 }, "geometry": { "type": "Point", "coordinates": [ 6.920124054, 50.933444976799997 ] } },
 { "type": "Feature", "properties": { "entries_id": 43, "entries_gebaude_id": 92, "entries_lat": 50.933898925800001, "entries_lng": 6.9199900627000002, "entries_bin_accessability": 1 }, "geometry": { "type": "Point", "coordinates": [ 6.9199900627, 50.933898925800001 ] } },
