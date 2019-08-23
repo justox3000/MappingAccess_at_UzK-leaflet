@@ -1,0 +1,2 @@
+"description","count","distanceToBuilding.Quantity.isEstimate","distanceToBuilding.Quantity.value","distanceToBuilding.Quantity.unit","isWheelChairParkingOnly","isGarage","maxLengthParkingLot.Quantity.isEstimate","maxLengthParkingLot.Quantity.value","maxLengthParkingLot.Quantity.unit","maxWidthParkingLot.Quantity.isEstimate","maxWidthParkingLot.Quantity.value","maxWidthParkingLot.Quantity.unit"
+"",3,true,100,"m",false,false,false,2,"m",true,2,"m"
