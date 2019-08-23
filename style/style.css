@@ -1,0 +1,19 @@
+
+/*
+
+#map{
+    border-style: solid;
+    border-width: medium;
+    border-radius: 3px;
+    margin: 0;
+    position: absolute;
+    top:-999;
+    z-index: -9999;
+  }
+*/
+
+#map {
+  width: auto;
+  height: 500px;
+}
+    

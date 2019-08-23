@@ -1,65 +1,56 @@
 // Initialize leaflet.js
 var L = require('leaflet');
 
-//OSM tiles attribution and URL
-var osmLink = '<a href="http://openstreetmap.org">OpenStreetMap</a>';
-var osmURL = 'http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png';
-var osmAttrib = '&copy; ' + osmLink;
-
-//Stamen Toner tiles attribution and URL
-var stamenURL = 'http://stamen-tiles-{s}.a.ssl.fastly.net/toner/{z}/{x}/{y}.{ext}';
-var stamenAttrib = 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a> &mdash; Map data &copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>';
-
-//Creation of map tiles
-var osmMap = L.tileLayer(osmURL, {attribution: osmAttrib});
-var stamenMap = L.tileLayer(stamenURL,{
-  attribution: stamenAttrib,
-  subdomains: 'abcd',
-  ext: 'png'
+// Initialize the map
+var map = L.map('map', {
+  scrollWheelZoom: false
 });
 
-//Map creation
-var map = L.map('map',{
-  zoomControl:false,
-  layers: [osmMap]
-}).setView([50.927, 6.931], 16);
+// Set the position and zoom level of the map
+map.setView([47.70, 13.35], 7);
+
+/*	Variety of base layers */
+var osm_mapnik = L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+	maxZoom: 19,
+	attribution: '&copy; OSM Mapnik <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+}).addTo(map);
 
 
-//create custom zoom Control on right bottom
-var zoomControl = L.control.zoom(
-  zoomOptions = {position: 'bottomright'}
-).addTo(map);
 
+var osm_bw_mapnik = L.tileLayer('http://{s}.tiles.wmflabs.org/bw-mapnik/{z}/{x}/{y}.png', {
+	maxZoom: 18,
+	attribution: '&copy; OSM Black and White Mapnik<a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+});
 
-//Base layers definition and addition
+var osm_de = L.tileLayer('http://{s}.tile.openstreetmap.de/tiles/osmde/{z}/{x}/{y}.png', {
+	maxZoom: 18,
+	attribution: '&copy; OSM Deutschland <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+});
+
+var stamen_Toner = L.tileLayer('http://stamen-tiles-{s}.a.ssl.fastly.net/toner/{z}/{x}/{y}.{ext}', {
+	attribution: 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a> &mdash; Map data &copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+	subdomains: 'abcd',
+	minZoom: 0,
+	maxZoom: 20,
+	ext: 'png'
+});
+ 
+var stamen_Watercolor = L.tileLayer('http://stamen-tiles-{s}.a.ssl.fastly.net/watercolor/{z}/{x}/{y}.{ext}', {
+	attribution: 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a> &mdash; Map data &copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+	subdomains: 'abcd',
+	minZoom: 1,
+	maxZoom: 16,
+	ext: 'png'
+});
+
+// Create base layers group object
 var baseLayers = {
-  "OSM Mapnik": osmMap,
-  "Stamen Toner": stamenMap
+	"OSM Mapnik": osm_mapnik,
+	"OSM Black White Mapnik": osm_bw_mapnik,
+	"OSM Germany": osm_de,
+	"Stamen Toner Background": stamen_TonerBackground,
+	"Stamen Watercolor": stamen_Watercolor
 };
 
- //Add baseLayers to map as control layers
- L.control.layers(baseLayers).addTo(map);
-
-
- //Fullscreen button
- map.addControl(new L.Control.Fullscreen());
-
- map.on('fullscreenchange', function () {
-  if (map.isFullscreen()) {
-      console.log('entered fullscreen');
-  } else {
-      console.log('exited fullscreen');
-  }
-});
-
-map.isFullscreen() // Is the map fullscreen?
-map.toggleFullscreen() // Either go fullscreen, or cancel the existing fullscreen.
-
-// `fullscreenchange` Event that's fired when entering or exiting fullscreen.
-map.on('fullscreenchange', function () {
-    if (map.isFullscreen()) {
-        console.log('entered fullscreen');
-    } else {
-        console.log('exited fullscreen');
-    }
-});
+// Add baseLayers to the map
+L.control.layers(baseLayers, null).addTo(map);
