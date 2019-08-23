@@ -1,12 +1,16 @@
-//this script creates an accessability object which will be used in all dataframes generically
-//this describes the physical and human rated accessability to a space
+//describes the physical and human rated accessability to a space
 
 //inspired by A11yJSON by @sozialhelden https://sozialhelden.github.io/ac-format/
 
 //conventions:
 //default values; replaced by input from user data
 
-accessability = { //describes accessability of a place
+
+var fs=require('fs');
+
+var accessability=null;
+
+accessability = {
   description: "", //text space for narration on accessability/subjective experiences
   ground: {   //describes ground conditions
    evenPavemement: false,//true if pavement is even not plastered
@@ -172,35 +176,44 @@ accessability = { //describes accessability of a place
             Quantity:{
               isEstimate: true, //true if number was estimated, false if measured
               value:0, //value of measurement, e.g. 20
-              unit: cm"" //unit, e.g. cm, m...
+              unit: "cm" //unit, e.g. cm, m...
               }
           }
         }
       }
     }],
-  pathways:{//describe pathways/hallways in a place
-    width:{//width constraints of all pathways inside a place
-        Quantity:{//object to describe a Quantity
-            isEstimate: true, //true if number was estimated, false if measured
-            value:0, //value of measurement, e.g. 20
-            unit: "m" //unit, e.g. cm, m...
+  pathways:{
+    width:{
+        Quantity:{
+            isEstimate: true,
+            value:0,
+            unit: "m"
         }
       }
   },
-  staff:{//describe presence of staff and their qualification
-    canSeeVisitorsFromInside: false, //true if staff can see people outside
-    offersAssistance: false, //true if staff helps disabled users
-    usesSignLanguage: false //true if staff uses sign language to communicates
+  staff:{
+    canSeeVisitorsFromInside: false,
+    offersAssistance: false,
+    usesSignLanguage: false
   },
-  allowsGuideDogs: false, //true if place allows guide dogs
-  smokingProhibited:true, //if smoking is prohibited or not
-  hasTactileGuidestrips: false, //true if venue has tactile guide strips on floor or wall
-  isQuiet: false, //if venue is rated as a quiet or noisy place
-  isWellLit: false, //if venue is rated as well lit or dim
-  hasConstructionSite:{//determine if it has a construction site currently
-    description:"",//describe the site and its  properties
-    plannedEndingDate:"0000-01-01",// forseeable ending date
+  allowsGuideDogs: false,
+  smokingProhibited:true,
+  hasTactileGuidestrips: false,
+  isQuiet: false,
+  isWellLit: false,
+  hasConstructionSite:{
+    description:"",
+    plannedEndingDate:"0000-01-01",
   }
 };
 
-//console.log(JSON.stringify(accessability));
+
+function writeToFile(json){
+      fs.writeFile("./data/scripts/a11y_models/a11y_buildingdModel.json",JSON.stringify(json), "utf-8", (err) => {
+            if (err) console.log(err);
+            console.log("Successfully Written to File.");
+      });
+};
+
+var json = accessability;
+writeToFile(json);

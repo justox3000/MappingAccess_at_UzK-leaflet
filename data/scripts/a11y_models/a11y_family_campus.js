@@ -4,7 +4,6 @@
 
 var fs = require('fs');
 
-//read in the a11y_room_model
 roomAccessability = { //describes accessability of rooms
     name:"", //use to differentiate from other rooms
     description:"", //space for narrated experience about usage of room
