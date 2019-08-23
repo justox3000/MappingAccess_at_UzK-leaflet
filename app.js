@@ -1,23 +1,10 @@
 // Initialize leaflet.js
 var L = require('leaflet');
 
-/*
-When pulling in GeoJSON from external data source or hosting it locally,
-you’ll need to load the data using AJAX. jQuery provides a standard getJSON function
-which will load JSON from an external source and then fire a callback once the data has loaded.
-leaflet plugin: leaflet ajax
- Add GeoJSON data via ajax or jsonp.
-*/
-
 //OSM tiles attribution and URL
 var osmLink = '<a href="http://openstreetmap.org">OpenStreetMap</a>';
 var osmURL = 'http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png';
 var osmAttrib = '&copy; ' + osmLink;
-
-//Carto tiles attribution and URL
-var cartoLink = '<a href="http://cartodb.com/attributions">CartoDB</a>';
-var cartoURL = 'http://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}.png';
-var cartoAttrib = '&copy; ' + osmLink + ' &copy; ' + cartoLink;
 
 //Stamen Toner tiles attribution and URL
 var stamenURL = 'http://stamen-tiles-{s}.a.ssl.fastly.net/toner/{z}/{x}/{y}.{ext}';
@@ -25,7 +12,6 @@ var stamenAttrib = 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, 
 
 //Creation of map tiles
 var osmMap = L.tileLayer(osmURL, {attribution: osmAttrib});
-var cartoMap = L.tileLayer(cartoURL, {attribution: cartoAttrib});
 var stamenMap = L.tileLayer(stamenURL,{
   attribution: stamenAttrib,
   subdomains: 'abcd',
@@ -41,12 +27,36 @@ var map = L.map('map',{
 //Base layers definition and addition
 var baseLayers = {
   "OSM Mapnik": osmMap,
-  "Carto DarkMatter": cartoMap,
   "Stamen Toner": stamenMap
 };
 
+
+
  //Add baseLayers to map as control layers
  L.control.layers(baseLayers).addTo(map);
+
+ //Fullscreen button
+ map.addControl(new L.Control.Fullscreen());
+
+ map.on('fullscreenchange', function () {
+  if (map.isFullscreen()) {
+      console.log('entered fullscreen');
+  } else {
+      console.log('exited fullscreen');
+  }
+});
+
+map.isFullscreen() // Is the map fullscreen?
+map.toggleFullscreen() // Either go fullscreen, or cancel the existing fullscreen.
+
+// `fullscreenchange` Event that's fired when entering or exiting fullscreen.
+map.on('fullscreenchange', function () {
+    if (map.isFullscreen()) {
+        console.log('entered fullscreen');
+    } else {
+        console.log('exited fullscreen');
+    }
+});
 
 //create custom zoom Control on right bottom
 var zoomControl = L.control.zoom(
