@@ -1,8 +1,6 @@
 //this script creates an accessability object which will be used in all dataframes generically
 //this describes the physical and human rated accessability to a space
 
-//it is part of the property object of each building: PlacePropert
-
 //inspired by A11yJSON by @sozialhelden https://sozialhelden.github.io/ac-format/
 
 //conventions:
@@ -104,7 +102,8 @@ accessability = { //describes accessability of a place
       toilet_id:0, //id of toilet given by RRZK lageplan
       toilet_lat: 0, //lat info about toilet
       toilet_lng: 0,//lng info about toilet
-      isUnisex: false, //1 if unisex toilet
+      toilet_building_id:0, //building id where the toilet is located
+      isUnisex: false, //true if unisex toilet
       changingTable: false,//true if it has a changing table
       isFemale: false, //true if for females
       isMale: false, //true if for males
