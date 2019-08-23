@@ -7,15 +7,13 @@ var map = L.map('map', {
 });
 
 // Set the position and zoom level of the map
-map.setView([47.70, 13.35], 7);
+map.setView([50.928312, 6.928781], 17);
 
 /*	Variety of base layers */
 var osm_mapnik = L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 	maxZoom: 19,
 	attribution: '&copy; OSM Mapnik <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
 }).addTo(map);
-
-
 
 var osm_bw_mapnik = L.tileLayer('http://{s}.tiles.wmflabs.org/bw-mapnik/{z}/{x}/{y}.png', {
 	maxZoom: 18,
@@ -26,7 +24,6 @@ var osm_de = L.tileLayer('http://{s}.tile.openstreetmap.de/tiles/osmde/{z}/{x}/{
 	maxZoom: 18,
 	attribution: '&copy; OSM Deutschland <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
 });
-
 
 var osm_fr = L.tileLayer('http://{s}.tile.openstreetmap.fr/osmfr/{z}/{x}/{y}.png', {
 	maxZoom: 20,
@@ -104,7 +101,6 @@ var esri_NatGeoWorldMap = L.tileLayer('http://server.arcgisonline.com/ArcGIS/res
 	attribution: 'Tiles &copy; Esri &mdash; National Geographic, Esri, DeLorme, NAVTEQ, UNEP-WCMC, USGS, NASA, ESA, METI, NRCAN, GEBCO, NOAA, iPC',
 	maxZoom: 16
 });
-
 
 // Create base layers group object
 var baseLayers = {
