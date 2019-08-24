@@ -27,11 +27,13 @@
     "fs": "0.0.1-security",
     "geojson-polyline": "^1.0.3",
     "get-json": "^1.0.1",
+    "jquery": "^3.4.1",
     "js-quantities": "^1.7.4",
     "leaflet": "^1.5.1",
     "leaflet-ajax": "^2.1.0",
     "leaflet-basemaps": "^0.3.4",
     "leaflet-easybutton": "^2.4.0",
+    "leaflet-filelayer": "^1.2.0",
     "leaflet-tilelayer-geojson": "^1.0.4",
     "leaflet.locatecontrol": "^0.67.0",
     "leaflet.tilelayer.colorfilter": "^1.2.5"

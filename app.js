@@ -123,3 +123,10 @@ var baseLayers = {
 
 // Add baseLayers to the map
 L.control.layers(baseLayers, null).addTo(map);
+
+
+//Add baselayers to map
+$.getJSON("a11y_buildings.geojson",function(data){
+	//addGeoJSON layer to the map one the file is loaded
+	L.geoJSON(data).addTo(map);
+});
