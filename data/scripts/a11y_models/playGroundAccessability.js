@@ -1,15 +1,8 @@
-//this script creates an accessability object for playgrounds specifically.
-//this describes the physical and human rated accessability to a room.
 
-//it is extracted from a11y_generic_model.js and used to describe the a11y of
-//family_campus playgrounds specifically.
+var fs=require('fs');
+var accessability=null;
 
-//inspired by A11yJSON by @sozialhelden https://sozialhelden.github.io/ac-format/
-
-//conventions:
-//these are default values that need to be changed by inputting data
-
-playGroundAccessability = {//describes accessability of a playground
+accessability = {//describes accessability of a playground
   description: "", //text space for narration on accessability/subjective experiences
   ground: {   //describes ground conditions
    evenPavemement: true,//true if pavement is even not plastered
@@ -47,8 +40,7 @@ playGroundAccessability = {//describes accessability of a playground
               unit: "m" //unit, e.g. cm, m...
               }
             }
-        }],
-      }
+        }]}
     }],
   pathways:{//describe pathways/hallways in a place
     width:{//width constraints of all pathways inside a place
@@ -70,4 +62,15 @@ playGroundAccessability = {//describes accessability of a playground
   isQuiet: false, //if venue is rated as a quiet or noisy place
   isWellLit: true, //if venue is rated as well lit or dim
 };
-//console.log(JSON.stringify(playGroundAccessability));
+
+
+function writeToFile(json){
+      fs.writeFile("./data/scripts/a11y_models/a11y_playGroundModel.json",JSON.stringify(json), "utf-8", (err) => {
+            if (err) console.log(err);
+            console.log("Successfully Written to File.");
+      });
+};
+
+json = accessability;
+console.log(json);
+writeToFile(json);

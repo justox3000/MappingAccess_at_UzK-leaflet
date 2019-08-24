@@ -1,19 +1,7 @@
-- Ich finde dass wie bei Wheelmap.org die Karte nicht in iener Box sein sollte (layout, justus)
-
--choose and download icons, labels and design for displaying information provided by layers and accessability features (Justus)
-
-Info:
-	-Universit�tsgeb�ude (Unigeb�ude-Daten und Instituts-Daten als Attribute)
-	-Familiencampus (Wickelr�ume, Spielpl�tze, Eltern-Kindr�ume etc.)
-	-Toiletten
-	-Parkpl�tze
-	-Eingänge der Unigebäude
-
--Fill html "Mitmachen" with info about Map-A-Thons und Datensatz zum Download (Leonie TODO)
+-choose and download icons, labels and design for displaying information provided by layers and accessability features (Justus) s. email von leonie
 
 -Add Geojson Search function (Justus)
 
 -Add Legende, Layer Auswahl und Toggle für Basiskarten sowie Feature-Anzeigemöglichkeiten
 
-
-Was soll alles angezeigt werden in Leaflet als Popup?
+Was soll alles angezeigt werden in Leaflet als Popup? s. leonies email
