@@ -7,7 +7,7 @@ var map = L.map('map', {
 });
 
 // Set the position and zoom level of the map
-map.setView([50.928312, 6.928781], 17);
+map.setView([50.928865, 6.928731], 15);
 
 /*	Variety of base layers */
 var osm_mapnik = L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -124,9 +124,20 @@ var baseLayers = {
 // Add baseLayers to the map
 L.control.layers(baseLayers, null).addTo(map);
 
-
-//Add baselayers to map
-$.getJSON("a11y_buildings.geojson",function(data){
-	//addGeoJSON layer to the map one the file is loaded
+//load GeoJSON buildings
+$.getJSON("../data/a11y_uzk/a11y_buildings.geojson", function(data){
+	//add GeoJSON layer to the map once the file is loaded
 	L.geoJSON(data).addTo(map);
+});
+
+//load GeoJSON family campus
+$.getJSON("../data/a11y_uzk/a11y_family_campus.geojson", function(data){
+	//add GeoJSON layer to the map once the file is loaded
+	L.geoJSON(data).addTo(map);
+});
+
+//load GeoJSON parking
+$.getJSON("../data/a11y_parking.geojson", function(data){
+	//add GeoJSON layer to the map once the file is loaded
+	L.getJSON(data).addTo(map);
 });
