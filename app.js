@@ -1,13 +1,13 @@
 // Initialize leaflet.js
 var L = require('leaflet');
-
 // Initialize the map
 var map = L.map('map', {
-  scrollWheelZoom: false
-});
+	scrollWheelZoom: false
+  });
+  
+  // Set the position and zoom level of the map
+  map.setView([50.928865, 6.928731], 15);
 
-// Set the position and zoom level of the map
-map.setView([50.928865, 6.928731], 15);
 
 /*	Variety of base layers */
 var osm_mapnik = L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -52,29 +52,98 @@ var baseLayers = {
 	"Stamen Terrain": stamen_Terrain
 };
 
-// Add baseLayers to the map
-L.control.layers(baseLayers, null).addTo(map);
+var basicIcon = L.Icon.extend({
+	options:{
+		iconSize: [36,36],
+		iconAnchor: [18, 18],
+		popupAnchor: [0,-6]
+	}
+});
 
-var controlLayers = L.control.layers().addTo(map);
+var wickelIcon = new basicIcon({iconUrl: './style/customMarkers/baby.png'});
+
+/*
+  // Creates a red marker with the coffee icon
+  var wickelraumIcon = L.AwesomeMarkers.icon({
+    icon: 'fa-baby',
+    markerColor: 'red'
+  });
+
+  var stillraumIcon = L.AwesomeMarkers.icon({
+	  icon: '',
+	  markerColor: 'red'
+  });
+
+  var kindergartenIcon = L.AwesomeMarkers.icon({
+	  icon: 'fa-baby-carriage',
+	  markerColor: 'red'
+  });
+
+  var elternKindIcon = L.AwesomeMarkers.icon({
+	  icon:'',
+	  markerColor: 'red'
+  });
+
+  var spielplatzIcon = L.AwesomeMarkers.icon({
+	  icon: '',
+	  markerColor: 'red'
+  });
+*/
+
+// Add baseLayers to the map
+var buildingsStyle = {
+	"color": "#FE7000",
+	"weight": 3,
+	"opacity": 0.8
+};
+
+function onEachBuilding(feature, layer){
+	layer.on('click', function(e){
+     var ourPopup = '<p><h4>' + e.target.feature.properties.building_name + '</h4></br>' + '<h5>' + e.target.feature.properties.building_street + ' ' + e.target.feature.properties.building_housenr + '</br>' + e.target.feature.properties.postalcode + ' ' + e.target.feature.properties.building_city + '</h5></p>';
+		layer.bindPopup(ourPopup).openPopup(e.latlng);
+	});
+}
+
+var buildingsOverlay = L.geoJSON(null, {
+	onEachFeature: onEachBuilding,
+	style: buildingsStyle
+});
+
 
 //load GeoJSON buildings
-var buildings = $.getJSON("../data/a11y_uzk/a11y_buildings.geojson", function(data){
-	//add GeoJSON layer to the map once the file is loaded
-	L.geoJSON(data).addTo(map);
+var buildings = new L.layerGroup();
 
-	controlLayers.addOverlay(geojsonLayer, 'Title');
-});
+$.getJSON("../data/a11y_uzk/a11y_buildings.geojson", function(data){
+	
+	buildingsOverlay.addData(data);
+	
+	
+})
+buildingsOverlay.addTo(map);
+
+
 
 //load GeoJSON family campus
-var family = $.getJSON("../data/a11y_uzk/a11y_family_campus.geojson", function(data){
+var family = new L.LayerGroup();
+$.getJSON("../data/a11y_uzk/a11y_family_campus.geojson", function(data){
+	/*violationPoints = L.geoJSON(data,{
+		onEachFeature:function(feature, layer){
+			layer.bindPopup(feature.properties.fc_facility_name);
+		}
+	})*/
+	
+	
 	//add GeoJSON layer to the map once the file is loaded
-	L.geoJSON(data).addTo(map);
+	L.geoJSON(data).addTo(family);
 });
 
+
+
 //load GeoJSON parking
-var parking = $.getJSON("../data/a11y_parking.geojson", function(data){
+var parking = new L.LayerGroup();
+$.getJSON("../data/a11y_parking.geojson", function(data){
 	//add GeoJSON layer to the map once the file is loaded
-	L.getJSON(data).addTo(map);
+	L.getJSON(data).addTo(parking);
 });
 
 var overlayMaps = {
@@ -83,4 +152,5 @@ var overlayMaps = {
 	"Parking": parking
 };
 
-L.control.layers(null, overlayMaps).addTo(map);
+
+L.control.layers(baseLayers, overlayMaps).addTo(map);
